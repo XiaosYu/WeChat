@@ -1,0 +1,43 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+    <ApplicationIcon>Logo.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Settings.json" />
+    <None Remove="UI\Add.png" />
+    <None Remove="UI\ChatGroud.png" />
+    <None Remove="UI\LoginBackgroud.png" />
+    <None Remove="UI\Logo.png" />
+    <None Remove="UI\MainBackgroud.jpg" />
+    <None Remove="UI\Picture.png" />
+    <None Remove="UI\Reset.png" />
+    <None Remove="UI\Search.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Logo.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Settings.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Resource Include="UI\Add.png" />
+    <Resource Include="UI\ChatGroud.png" />
+    <Resource Include="UI\LoginBackgroud.png" />
+    <Resource Include="UI\MainBackgroud.jpg" />
+    <Resource Include="UI\Picture.png" />
+    <Resource Include="UI\Reset.png" />
+    <Resource Include="UI\Search.png" />
+  </ItemGroup>
+
+</Project>

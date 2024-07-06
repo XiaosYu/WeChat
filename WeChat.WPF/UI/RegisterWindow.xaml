@@ -1,0 +1,69 @@
+﻿<Window x:Class="WeChat.WPF.UI.RegisterWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WeChat.WPF.UI"
+        mc:Ignorable="d"
+        Title="注册账号" Height="350" Width="600">
+    <Grid Background="AliceBlue">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="500"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Image Grid.Column="0" Grid.Row="0" Grid.RowSpan="5" Grid.ColumnSpan="3" Source="/UI/LoginBackgroud.png" Stretch="Fill" Opacity="0.3"/>
+        <Grid Grid.Row="1" Grid.Column="1" Grid.RowSpan="3">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="100"/>
+                <ColumnDefinition Width="300"/>
+                <ColumnDefinition Width="100"/>
+            </Grid.ColumnDefinitions>
+
+            <Label Grid.Row="0" Grid.Column="0" Content="手机号" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+            <Label Grid.Row="1" Grid.Column="0" Content="密码" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+            <Label Grid.Row="2" Grid.Column="0" Content="名称" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+            <Label Grid.Row="3" Grid.Column="0" Content="验证码" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+            <TextBox x:Name="TB_Uid" Grid.Row="0" Grid.Column="1" TextBlock.TextAlignment="Left" VerticalAlignment="Center" FontSize="20"/>
+            <TextBox x:Name="TB_Name" Grid.Row="2" Grid.Column="1" TextBlock.TextAlignment="Left" VerticalAlignment="Center" FontSize="20"/>
+            <TextBox x:Name="TB_VerfiyCode" Grid.Row="3" Grid.Column="1" TextBlock.TextAlignment="Left" VerticalAlignment="Center" FontSize="20"/>
+            <Label x:Name="Lab_SendCode" Grid.Row="3" Grid.Column="2" FontSize="15" VerticalAlignment="Center" HorizontalAlignment="Center">
+                <Hyperlink Click="Lab_SendCode_Click">发送验证码</Hyperlink>
+            </Label>
+            <PasswordBox x:Name="TB_Password" Grid.Row="1" Grid.Column="1" TextBlock.TextAlignment="Left" VerticalAlignment="Center" FontSize="20"/>
+            <Button x:Name="BT_Login" Grid.Row="4" Grid.Column="1" Margin="15,5,15,5" Content="注册" Click="BT_Login_Click">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="1,1" StartPoint="0,0">
+                        <GradientStop Color="#FF64BAC5" Offset="0"/>
+                        <GradientStop Color="#FFBBFFFA" Offset="0.645"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+                <Button.Template>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Border BorderThickness="1" CornerRadius="30" Background="{TemplateBinding Background}">
+                            <ContentPresenter VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+
+
+        </Grid>
+
+    </Grid>
+</Window>

@@ -1,0 +1,51 @@
+﻿{
+   "CodeGenerationMode": 2,
+   "ContextClassName": "DB_WeChatContext",
+   "ContextNamespace": "ORM",
+   "DefaultDacpacSchema": null,
+   "FilterSchemas": false,
+   "IncludeConnectionString": false,
+   "ModelNamespace": "ORM.Models",
+   "OutputContextPath": "ORM",
+   "OutputPath": "ORM\\\\Models",
+   "ProjectRootNamespace": "WeChat.WebApi",
+   "Schemas": null,
+   "SelectedHandlebarsLanguage": 0,
+   "SelectedToBeGenerated": 0,
+   "Tables": [
+      {
+         "Name": "[dbo].[TB_Account]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[TB_ApiLog]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[TB_ChatLog]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[TB_User]",
+         "ObjectType": 0
+      }
+   ],
+   "UiHint": "10_0_16_17.DB_WeChat",
+   "UseBoolPropertiesWithoutDefaultSql": false,
+   "UseDatabaseNames": false,
+   "UseDbContextSplitting": false,
+   "UseFluentApiOnly": true,
+   "UseHandleBars": false,
+   "UseHierarchyId": false,
+   "UseInflector": false,
+   "UseLegacyPluralizer": false,
+   "UseManyToManyEntity": false,
+   "UseNoConstructor": false,
+   "UseNoDefaultConstructor": false,
+   "UseNoNavigations": false,
+   "UseNoObjectFilter": false,
+   "UseNodaTime": false,
+   "UseNullableReferences": false,
+   "UseSchemaFolders": false,
+   "UseSpatial": false
+}
