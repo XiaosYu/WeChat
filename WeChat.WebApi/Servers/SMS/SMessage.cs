@@ -10,11 +10,7 @@
 		private string _pwd;
 		public SMessage()
 		{
-			_url_send = "http://47.92.128.19:8088/v2sms.aspx";
-			_url_surperplus = "http://47.92.128.19:8088/sms.aspx";
-			_uid = "2957";
-			_account = "lll147258369";
-			_pwd = "021228";
+			
 		}
 		public string SendMessage(string msg, string sendtime, params string[] phone)
 		{
