@@ -23,6 +23,7 @@
         {
             Factory = new DBContextFactory(Config);
             DBContext = Factory.Create<DB_WeChatContext>();
+            DBContext.Database.EnsureCreated();
         }
         void IDisposable.Dispose()
         {

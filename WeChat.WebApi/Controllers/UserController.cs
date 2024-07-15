@@ -79,7 +79,8 @@
 
                 //构造返回model
                 VerifyCodeModel<IActionResult> model = new();
-                var code = Random(6, "-1");
+                //var code = Random(6, "-1");
+                var code = "000000";
                 model.Code = code;
                 model.Phone = phone;
                 model.RegisterTime = DateTime.Now;
@@ -111,12 +112,15 @@
                 RegisterCodes.Add(model);
 
                 //发送短信
+
+                /* 这一段代码需要注册发信服务(这个是收费的!!!!)，现在固定下来仅用000000验证
                 SMessage message = new();
                 var data = message.TurntoObject(message.SendMessage($"【SpaceServer】验证码为:{code},在5分钟内有效", "", phone));
                 if(data.returnstatus != "Success")
                 {
                     throw new Exception("短信服务繁忙或错误,请联系管理员");
                 }
+                */
 
                 return Json(new { code = 200, msg = "验证码已发送" });
 

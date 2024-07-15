@@ -8,7 +8,9 @@
         {
             //获取option
             DbContextOptionsBuilder<T> builder = new DbContextOptionsBuilder<T>();
-            builder.UseSqlServer(Setting[typeof(T).Name.Replace("Context", "")]);
+
+            //builder.UseSqlServer(Setting[typeof(T).Name.Replace("Context", "")]);
+            builder.UseSqlite(Setting[typeof(T).Name.Replace("Context", "")]);
             return (T)Activator.CreateInstance(typeof(T),builder.Options);
         }
     }

@@ -1,5 +1,5 @@
 ﻿{
-	"BaseUrl": "http://api.spaceserver.cloud:1314",
-	"WsUrl": "ws://api.spaceserver.cloud:1314/socket",
+	"BaseUrl": "https://localhost:7108",
+	"WsUrl": "wss://localhost:7108/socket",
 	"BufferSize": 16384
 }
